@@ -42,13 +42,13 @@ if (arg.d == null) {
     days = arg.d;
 }
 
-let weather = "";
+let forecast = "";
 
-// Determine weather condition based on precipitation hours
+// Determine forecast condition based on precipitation hours
 if (data.daily.precipitation_hours[days] > 0) {
-    weather += "There will be rain ";
+    forecast += "There will be rain ";
 } else {
-    weather += "There will be sun ";
+    forecast += "There will be sun ";
 }
 
 // Output the appropriate day information
@@ -59,3 +59,5 @@ if (days == 0) {
 } else {
     console.log("tomorrow.");
 }
+
+console.log(forecast);
