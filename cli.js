@@ -15,7 +15,12 @@ if (arg.h) {
 
 // Extract latitude and longitude values from command-line arguments
 const lat = arg.n ? Math.round(arg.n * 100) / 100 : arg.s ? -Math.round(arg.s * 100) / 100 : undefined;
+if (lat == undefined)
+    console.log('Latitude must be in range');
 const long = arg.e ? Math.round(arg.e * 100) / 100 : arg.w ? -Math.round(arg.w * 100) / 100 : undefined;
+if (long == undefined)
+    console.log('Longitude must be in range');
+
 
 // Determine the timezone to use
 const timezone = arg.z ?? moment.tz.guess();
