@@ -1,7 +1,6 @@
 {
   "name": "package-name",
   "version": "1.0.0",
-  "description": "This assignment will help you learn to create an installable Node.js command line utility.",
   "main": "galosh.js",
   "scripts": {
     "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
@@ -16,13 +15,13 @@
     "url": "https://github.com/comp426-2023-spring/a02-functions-nathaniel-nguyen/issues"
   },
   "homepage": "https://github.com/comp426-2023-spring/a02-functions-nathaniel-nguyen#readme",
-  "bin": {
-	  "galosh.js": "./cli.js"
-  },
-  "type": "module",
   "dependencies": {
     "minimist": "^1.2.7",
     "moment-timezone": "^0.5.40",
     "node-fetch": "^3.3.0"
-  }
+  },
+  "bin": {
+    "galosh.js": "./cli.js"
+  },
+  "type": "module"
 }
