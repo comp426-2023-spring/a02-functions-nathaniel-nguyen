@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/comp426-2023-spring/a02-functions-nathaniel-nguyen"
+    "url": "git+https://github.com/comp426-2023-spring/a02-functions-nathaniel-nguyen.git"
   },
   "author": "nathaniel-nguyen",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/comp426-2023-spring/a02-functions-nathaniel-nguyen"
+    "url": "https://github.com/comp426-2023-spring/a02-functions-nathaniel-nguyen/issues"
   },
-  "homepage": "https://github.com/comp426-2023-spring/a02-functions-nathaniel-nguyen",
+  "homepage": "https://github.com/comp426-2023-spring/a02-functions-nathaniel-nguyen#readme",
   "bin": {
 	  "galosh.js": "./cli.js"
   },
