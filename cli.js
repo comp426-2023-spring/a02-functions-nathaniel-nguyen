@@ -16,8 +16,8 @@ if (arg.h) {
 }
 
 // Extract latitude and longitude values from command-line arguments
-const lat = arg.n || -1 * (arg.s);
-const long = arg.e || -1 * (arg.w);
+const lat = -1 * (arg.s) || arg.n;
+const long = -1 * (arg.w) || arg.e;
 
 // Guess the timezone using moment-timezone
 const timezone = moment.tz.guess();
