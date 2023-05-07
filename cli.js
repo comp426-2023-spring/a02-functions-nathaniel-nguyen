@@ -15,12 +15,12 @@ if (arg.h) {
     process.exit(0);
 }
 
+// Guess the timezone using moment-timezone
+const timezone = moment.tz.guess();
+
 // Extract latitude and longitude values from command-line arguments
 const lat = -1 * (arg.s) || arg.n;
 const long = -1 * (arg.w) || arg.e;
-
-// Guess the timezone using moment-timezone
-const timezone = moment.tz.guess();
 
 // Fetch weather data from open-meteo API
 const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=" + lat + "&longitude=" + long + "&daily=weathercode,temperature_2m_max,precipitation_hours,windspeed_10m_max,winddirection_10m_dominant&current_weather=true&timezone=" + timezone);
