@@ -53,11 +53,11 @@ if (data.daily.precipitation_hours[days] > 0) {
 
 // Output the appropriate day information
 if (days == 0) {
-    console.log("today.");
+    forecast += "today.";
 } else if (days > 1) {
-    console.log("in " + days + " days.");
+    forecast += "in " + days + " days.";
 } else {
-    console.log("tomorrow.");
+    forecast += "tomorrow.";
 }
 
 console.log(forecast);
