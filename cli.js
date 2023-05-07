@@ -36,7 +36,7 @@ const data = await response.json();
 
 // Check if -j option is specified to output JSON data
 if (arg.j) {
-    console.log(data);
+    console.log(JSON.stringify(data, null, 2));
     process.exit(0);
 }
 
