@@ -25,11 +25,11 @@ if (arg.h) {
 const timezone = moment.tz.guess();
 
 // Extract latitude and longitude values from command-line arguments
-const lat = -1 * (arg.s) || arg.n;
-const long = -1 * (arg.w) || arg.e;
+const latitude = -1 * (arg.s) || arg.n;
+const longitude = -1 * (arg.w) || arg.e;
 
 // Fetch weather data from open-meteo API
-const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=" + lat + "&longitude=" + long + "&daily=weathercode,temperature_2m_max,precipitation_hours,windspeed_10m_max,winddirection_10m_dominant&current_weather=true&timezone=" + timezone);
+const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=" + latitude + "&longitude=" + longitude + "&daily=precipitation_hours&current_weather=true&timezone=" + timezone);
 
 // Get the data from the request
 const data = await response.json();
